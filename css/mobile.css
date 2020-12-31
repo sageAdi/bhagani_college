@@ -1,0 +1,37 @@
+@media (max-width: 768px){
+    .navbar-nav li{
+        border-bottom: 1px solid rgba(173,184,188,0.7);
+    }
+    .downLink ul li{
+        width: 100%;
+    }
+    .dropdown-submenu a::after {
+        transform: rotate(0deg);
+        position: absolute;
+        right: 6px;
+        top: .8em;
+    }
+    .section-1 .panel{
+        width: 100%;
+        margin: 10px 20px;
+    }
+}
+@media (max-width: 425px){
+    .bannerText{
+        font-size: 1.5rem;
+    }
+    .navbar-brand{
+        display: block;
+        margin-left: 10px;
+    }
+    .carousel-item img{
+        width: 100%;
+        height: 30vh;
+    }
+    footer h4,footer p,footer ul li,footer a{
+        margin-left: 10px;
+    }
+    footer a{
+        margin-bottom: 10px;
+    }
+}

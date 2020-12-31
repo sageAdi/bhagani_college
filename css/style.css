@@ -1,0 +1,219 @@
+*{
+    box-sizing: border-box;
+}
+header,section{
+    overflow: hidden;
+}
+:root{
+    /*  background 1  rgb(0,33,48)
+        backgrpund 2    #57068C
+        textColor   rgb(173,184,188)
+        downLink: rgb(191,89,9)
+        footer  rgb(34,3,55)
+    */
+    --backgroundColor: rgb(0,33,48);
+    --textColor: rgb(173,184,188);
+    --white: #fff;
+    --downLink: rgb(0,33,48);
+    --footerColor: rgb(0,33,48);
+}
+/* Starting of header */
+header{
+    background: var(--backgroundColor);
+}
+header .banner{
+    color: var(--white);
+}
+/* Ending of header */
+/* Starting of Navigation Bar  */
+.navbar-brand{
+    color: var(--textColor);
+    display: none;
+}
+.navbar button{
+    margin-left: auto;
+    color: var(--white);
+}
+/* .navbar-nav > li{
+    padding: 10px 10px;
+} */
+.nav-item a{
+    color: var(--textColor);
+}
+/* Ending of Navigation Bar  */
+/* Starting of First Dropdown */
+.dropdown-menu{
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: var(--backgroundColor);
+}
+.dropdown-menu .dropdown-item{
+    border-bottom: 1px solid rgba(173,184,188,0.7);
+}
+.navbar-nav > li.dropdown:hover>a:hover{
+    color: var(--white);
+    border-bottom: none;
+}
+.dropdown-menu > li.dropdown-item:hover{
+    background: var(--backgroundColor);
+}
+.dropdown-menu > li.dropdown-item:hover > a{
+    color: var(--white);
+    text-decoration: none;
+}
+li.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+/* Ending of First Dropdown */
+/* Starting of Second Dropdown */
+
+.navbar-nav .dropdown-menu > li.dropdown-submenu:hover> a:hover{
+    color: white;
+}
+li.dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+}
+.dropdown-submenu {
+position: relative;
+}
+
+.dropdown-submenu a::after {
+transform: rotate(-90deg);
+position: absolute;
+right: 6px;
+top: .8em;
+}
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+}
+
+/* Ending of Second Dropdown */
+
+/*Starting of Carousel*/
+.carouselDiv{
+    margin-top: 0px;
+}
+
+.carousel-item img{
+    width: 100vw;
+    height: 80vh;
+}
+
+/* Starting of downLink */
+.downLink{
+    background: var(--downLink);
+}
+.downLink ul li{
+    width: 25%;
+    padding: 10px;
+    text-align: center;
+}
+.downLink ul li:hover{
+    background: darkgoldenrod;
+}
+.downLink a{
+    color: var(--white);
+    text-decoration: none;
+    width: 100%;
+}
+.downLink
+/* Ending of downLink */
+
+/*Ending of Carousel*/
+/*Starting of Section-1*/
+.section-1{
+    margin-top: 20px;
+}
+.section-1 .mainPanel{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.section-1 .panel{
+    width: 550px;
+}
+.section-1 h3{
+    font-weight: bold;
+    font-size: 18px;
+    color: #170886;
+    border-top: 1px solid black;
+    margin: 20px 0px 10px;
+    padding: 5px 19px;
+    border-bottom: 1px solid black;
+}
+.section-1 .panelBody{
+    height: 210px;
+    width: auto;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.section-1 .panel ul{
+    list-style-type: none;
+    padding: 10px;
+}
+.section-1 .panel ul li{
+    padding: 3px;
+    border-bottom: 2px dotted grey;
+}
+.section-1 .panel ul li a{
+    color: #337AB7;
+}
+/*Ending of Section-1*/
+/*Starting of Footer*/
+footer{
+    background: var(--footerColor);
+    overflow-x: hidden;
+    margin-top: 40px;
+}
+footer .row{
+    justify-content: center;
+    margin-top: 20px;
+}
+footer h4{
+    color: orange;
+    margin-bottom: 5px;
+    border-bottom: 1px solid whitesmoke;
+}
+footer ul{
+    list-style-type: none;
+    padding: 0;
+}
+footer a{
+    color: white;
+}
+footer p{
+    color: white;
+
+}
+footer a:hover{
+    text-decoration: none;
+}
+footer .btn-facebook{
+    border-radius: 50px;
+	width: 33px;
+	height: 33px;
+	background-color: #3b589b;
+	border: 0px;
+	margin-top: 9px;
+}
+footer .btn-twitter {
+	border-radius: 50px;
+	width: 33px;
+	height: 33px;
+	background-color: #4aa9d1;
+	border: 0px;
+	margin-top: 9px;
+}
+
+footer .btn-google-plus {
+	border-radius: 50px;
+	width: 33px;
+	height: 33px;
+	background-color: #db4a39;
+	border: 0px;
+	margin-top: 9px;
+}
+/* Ending of Footer */
